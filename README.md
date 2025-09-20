@@ -31,6 +31,11 @@ Our results, presented in the following table, show that the computation time re
 ![EFL over O-RAN Architecture](figures/results.png)
 
 
+## Convergence of Mobility eApp
+eApps in our paper correspond to the mobility predictions and are trained on real-world vehicular traces from the Porto taxi network. We have noticed that our eApps converge quickly (i.e., they can rapidly predict the correct location of vehicles for the next 0.01 second, which is all we need in our optimizations). This is due to the fact that real-world mobility traces of vehicles are captured over various roads/highways, making the locations of vehicles less randomized and more predictable, especially for the next 0.01 second. For demonstration purposes, we plot the convergence of our eApps below:
+![EFL over O-RAN Architecture](figures/eApp.png)
+Inspecting the plot, it can be construed that with only few learning iterations, the eApp is at a near-convergence point (i.e., the 0.01 second prediction typically deviates only slightly from the true position). As a result, our optimizations are not sensitive to estimation errors by eApps as such errors become negligible within a few learning iterations of eApps.
+
 ## 📝 Citation  
 If you use this code, please cite our paper:  
 
