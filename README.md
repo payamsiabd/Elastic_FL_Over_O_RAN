@@ -27,6 +27,8 @@ This implementation is intended for research and reproducibility of our results.
 
 In the main paper, we evaluated our framework over medium-scale network using real taxi trajectory data from Porto city, which provides a realistic mobility pattern resembling the dynamics of vehicular clients in urban cellular networks. Here, we evaluate the computation time of our framework in a large-scale network setting with 55 O-DUs, 250 O-RUs, and 1200 FL clients (see Fig. 2 in this letter). Our results show that the computation time remains tractable even at this scale. Specifically, as shown in Table below, the near-RT slice and mobility management requires on average only 0.03 s per O-DU, while MAC scheduling requires about 0.002 s per O-RU. These results are nearly identical for both the medium-scale network with 150 clients (which is the main setup used for our simulations throughout the paper) and the large-scale network with 1200 clients.
 
+![EFL over O-RAN Architecture](figures/map_large.png)
+
 ## 📝 Citation  
 If you use this code, please cite our paper:  
 
